@@ -1,5 +1,7 @@
 body {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,13 +9,112 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background: #0d2241;
-  padding: 1rem;
+main {
+  /* padding: 1rem; */
+  flex: 1;
 }
 
-header a {
+.btn-primary {
+  background: #130b33;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e5de00;
+  color: black;
+}
+
+.img-large {
+  max-width: 80%;
+}
+
+.header {
+  background: #130b33;
+  color: '#fff';
+  font-weight: bold;
+  /*  padding: 0.5rem; */
+}
+
+.nav-link {
+  color: white;
+}
+
+.header:hover {
+  color: #e5de00;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header a {
   color: antiquewhite;
   font-weight: bold;
   text-decoration: none;
+} */
+
+/* .talkworld-logo {
+  display: block;
+  width: 20%;
+  max-width: 600px;
+  height: auto;
+} */
+.site-container {
+  min-height: 100vh;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+
+  border: 1px solid yellow;
+  margin: 1rem;
+}
+
+/* .product img {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  padding-bottom: 3rem;
+} */
+
+.product-info {
+  margin: 1rem;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.rating {
+  color: #ffc000
+}
+
+#backg {
+  color: white;
+}
+
+.img-thumbnail {
+  height: 80px;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+.checkout-steps>div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0
+}
+
+.checkout-steps>div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
 }
